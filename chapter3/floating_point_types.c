@@ -129,7 +129,14 @@ int main(void) {
     for (int i = 0; i < 32*2+1; i++)
         putchar('-');
     putchar('\n');
-    printf("denormalised values range (excluding both values and 0):\n -FLT_MIN: %e, FLT_MIN: %e\n", -FLT_MIN, FLT_MIN);
+
+    printf_info(-FLT_MIN);
+    printf_info(FLT_MAX);
+
+    for (int i = 0; i < 32*2+1; i++)
+        putchar('-');
+    putchar('\n');
+    printf("min float range (excluding both values and 0):\n -FLT_MIN: %e, FLT_MIN: %e\n", -FLT_MIN, FLT_MIN);
     putchar('\n');
     printf("max float range (including both values):\n -FLT_MAX: %e, FLT_MAX: %e\n", -FLT_MAX, FLT_MAX);
 
