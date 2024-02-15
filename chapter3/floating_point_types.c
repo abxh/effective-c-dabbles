@@ -66,6 +66,8 @@ int main(void) {
     printf("Floating point size assumed is correct: %d == 32\n", sizeof(float) * 8);
     putchar('\n');
 
+    printf_info(12.F);
+
     printf_info(0.F);
     printf_info(-0.F);
 
